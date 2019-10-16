@@ -1,0 +1,258 @@
+<!DOCTYPE html mead>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<!-- 使用chrome渲染，没有chrome使用最高版本的IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- 屏幕宽度=设备宽度，初始比例=1,不可缩放,最大放大，最小缩放-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1" />
+
+
+		<title></title>
+		<style>
+
+			/*----------------------------------------------------------*/
+			.track-list{margin: 20px; padding-left: 5px; position: relative;}
+			.list-left{
+				display: inline-block;
+				text-align: center;
+				padding-top:20px;
+				padding-bottom:20px;
+				padding-right: 10px;
+				border-right:1px solid #CDCDCD;
+			}
+			.node-icon{
+				position: absolute; 
+				left: 45px; 
+				width: 30px; 
+				height: 70px; 
+				background: url(icon-dian@3x.png)  16px 33px no-repeat;
+				background-size: 8px 8px;
+			}
+
+			.icon-bag-transport{
+				position: absolute; 
+				left: -15px; 
+				top: 20px; 
+				width: 31px; 
+				height: 31px; 
+				background: url(icon-yunshuzhong@3x.png)  0px 0px no-repeat;
+				background-size: 30px 30px;
+				background-color: #fff;
+			}
+			.icon-bag-get{
+				position: absolute; 
+				left: -15px; 
+				top: 20px; 
+				width: 31px; 
+				height: 31px; 
+				background:url(icon-yilanjian@3x.png)  0px 0px no-repeat;
+				background-size: 30px 30px;
+				background-color: #fff;
+			}
+			.icon-bag-send{
+				position: absolute; 
+				left: -15px; 
+				top: 20px; 
+				width: 31px; 
+				height: 31px; 
+				background:url(icon-yifahuo@3x.png)  0px 0px no-repeat;
+				background-size: 30px 30px;
+				background-color: #fff;
+			}
+
+			.rel-div{
+				position: relative;
+			}
+
+			.txt{
+				margin-left:25px;
+				display: inline-block; 
+				vertical-align: middle;
+				display: flex;
+				flex-direction:column;
+			    justify-content: center;
+
+			}
+			.txt-title{
+				font-size:15px;
+				font-family:PingFangSC-Regular;
+				font-weight:400;
+				color:rgba(154,154,154,1);
+				line-height: 27px;
+			}
+			.txt-body{
+				font-size:13px;
+				font-family:PingFangSC-Regular;
+				font-weight:400;
+				color:rgba(154,154,154,1);
+			}
+			.list-main{
+				display: flex;
+				/*justify-content: space-around;*/
+			}
+			.list-left-top{
+				width: 49px;
+				font-size:12px;
+				font-family:PingFangSC-Regular;
+				font-weight:400;
+				color:rgba(154,154,154,1);
+			}
+			.list-left-bottom{
+				font-size:12px;
+				font-family:PingFangSC-Regular;
+				font-weight:400;
+				color:rgba(154,154,154,1);
+			}
+			.track-rcol{
+				display: flex;
+				justify-content: center;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<div class="track-rcol">
+			<div class="track-list">
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-18</div>
+						<div class="list-left-bottom">14:25</div>
+					</div>
+					<div class="rel-div"><i class="icon-bag-transport"></i></div>
+					<div class="txt">
+						<div class="txt-title">运输中</div>
+						<div class="txt-body">安徽省合肥市滨湖南区三部 已收入</div>
+					</div>
+				</div>
+
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-18</div>
+						<div class="list-left-bottom">13:48</div>
+					</div>
+					<div><i class="node-icon"></i></div>
+					<div class="txt">
+						<div class="txt-body">安徽省合肥市滨湖南区公司 已发出，下一站 安徽省合肥市滨湖南区三部</div>
+					</div>
+				</div>
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-18</div>
+						<div class="list-left-bottom">13:35</div>
+					</div>
+					<div><i class="node-icon"></i></div>
+					<div class="txt">
+						<div class="txt-body">安徽省合肥市滨湖区公司 已收入
+						</div>
+					</div>
+				</div>
+
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-18</div>
+						<div class="list-left-bottom">10:53</div>
+					</div>
+					<div><i class="node-icon"></i></div>
+					<div class="txt">
+						<div class="txt-body">合肥转运中心公司 已发出，下一站 安徽省合肥市滨湖区</div>
+					</div>
+				</div>
+
+
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-18</div>
+						<div class="list-left-bottom">10:20</div>
+					</div>
+					<div><i class="node-icon"></i></div>
+					<div class="txt">
+						<div class="txt-body">合肥转运中心公司 已收入</div>
+					</div>
+				</div>
+
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-18</div>
+						<div class="list-left-bottom">01:24</div>
+					</div>
+					<div><i class="node-icon"></i></div>
+					<div class="txt">
+						<div class="txt-body">南京转运中心公司 已发出，下一站 合肥转运中心</div>
+					</div>
+				</div>
+
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-17</div>
+						<div class="list-left-bottom">04:40</div>
+					</div>
+					<div><i class="node-icon"></i></div>
+					<div class="txt">
+						<div class="txt-body">南京转运中心公司 已收入</div>
+					</div>
+				</div>
+
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-17</div>
+						<div class="list-left-bottom">03:53</div>
+					</div>
+					<div><i class="node-icon"></i></div>
+					<div class="txt">
+						<div class="txt-body">福州转运中心公司 已发出，下一站 南京转运中心</div>
+					</div>
+				</div>
+
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-17</div>
+						<div class="list-left-bottom">00:16</div>
+					</div>
+					<div><i class="node-icon"></i></div>
+					<div class="txt">
+						<div class="txt-body">福州转运中心公司 已打包</div>
+					</div>
+				</div>
+
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-17</div>
+						<div class="list-left-bottom">00:15</div>
+					</div>
+					<div><i class="node-icon"></i></div>
+					<div class="txt">
+						<div class="txt-body">福州转运中心公司 已收入</div>
+					</div>
+				</div>
+
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-16</div>
+						<div class="list-left-bottom">21:06</div>
+					</div>
+					<div class="rel-div"><i class="icon-bag-get"></i></div>
+					<div class="txt">
+						<div class="txt-title">已揽件</div>
+						<div class="txt-body">福建省温州市东南公司 已收件</div>
+					</div>
+				</div>
+
+				<div class="list-main">
+					<div class="list-left">
+						<div class="list-left-top">04-16</div>
+						<div class="list-left-bottom">16:07</div>
+					</div>
+					<div class="rel-div"><i class="icon-bag-send"></i></div>
+					<div class="txt">
+						<div class="txt-title">已发货</div>
+						<div class="txt-body">包裹正在等待揽收</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
